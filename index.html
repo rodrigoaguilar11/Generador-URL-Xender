@@ -3,12 +3,12 @@
 
 <head>
     <title>Generador de URL Xender</title>
+    <link rel="icon" href="img/icon.ico">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" href="/img/icon.ico">
     <script src="js/bootstrap.bundle.min.js"></script>
 </head>
 
@@ -34,12 +34,13 @@
                 <p>Xender permite transferir archivos entre un teléfono y una PC de forma inalámbrica sin usar datos.
                 </p>
                 <p>
-                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#tutorial" role="button"
                         aria-expanded="false" aria-controls="collapseExample">
                         Ver / Ocultar Tutorial </a>
                 </p>
-                <div class="collapse" id="collapseExample">
+                <div class="collapse" id="tutorial">
                     <div class="card card-body">
+                        <h4>Como conectar los dispositivos</h4>
                         <p>Accede a esta página en la PC que quieras conectar e instala la aplicación en tu teléfono
                             aquí: <a
                                 href="https://play.google.com/store/apps/details?id=cn.xender&hl=es_UY&gl=US&pli=1">Descargar
@@ -54,10 +55,60 @@
                         <hr>
                         <h5>Identifica el número que se encuentra entre <span style="color:red">192.168.43.</span> Y el
                             <span style="color:red">:33455</span></h5>
+                        <p>Consejo: puedes leer la IP de derecha a izquierda y leyendo el numero anterior a los :</p>
                         <img src="img/3.png" alt="3">
                         <h5><a href="#titulo">Ingresa ese número Aquí</a>, presiona Enter, Acepta los permisos y tus
                             dispositivos estarán conectados!!</h5>
-                        <p>Si el generador no funciona, verifica que el número sea el correcto.</p>
+                        <p>Si el generador no funciona, verifica que el número sea el correcto.<br>
+                            Si tu teléfono se desconecta de la red, es probable que el número cambie.<br>
+                            Xender cuenta con una guía que te ayudara a navegar por su interfaz. <br>
+                            Los archivos que transferimos al telefono se almacenan en la carpeta <span
+                                style="color:green">Xender </span>ubicada en el directorio raiz del dispositivo.</p>
+                        <a class="btn btn-danger" data-bs-toggle="collapse" href="#tutorial" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Cerrar Tutorial</a>
+                    </div>
+                </div>
+                <p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#comofunciona" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        ¿Como Funciona?
+                    </a>
+                </p>
+                <div class="collapse" id="comofunciona">
+                    <div class="card card-body">
+                        <h4>¿Como Funciona Xender?</h4>
+                        <p>Cuando iniciamos la aplicación en nuestro teléfono, Xender actúa análogo a una página web la
+                            cual solo pueden solicitar acceso los dispositivos que se encuentran en la misma red,
+                            también les brinda una interfaz útil y amigable que permite encontrar e intercambiar
+                            rápidamente los
+                            documentos que necesitemos.</p>
+                        <hr>
+                        <h4>¿Porque cambia la URL?</h4>
+                        <p>De forma genérica, las redes asignan direcciones de IP dinámicas para sus dispositivos
+                            conectados, asignando una dirección disponible que no se esté utilizando en el momento. <br>
+                            Las direcciones de IP estáticas suelen dar problemas de asignación de identidad en redes
+                            donde los dispositivos conectados se modifican con frecuencia, ya que pueden coincidir
+                            varios dispositivos con una misma dirección. <br>
+                            Para solucionar esto, cada vez que un dispositivo se conecta, su dirección IP se actualiza,
+                            siendo la mayoría de las veces diferente a la asignada anteriormente.
+                        </p>
+                        <hr>
+                        <h4>¿Donde se aloja Xender?</h4>
+                        <p>Xender inicia un servidor web en nuestro teléfono al cual accedemos desde otro dispositivo al
+                            ingresar como URL la IP actual del teléfono en la red, dentro de la misma el servidor se
+                            encuentra alojado en el puerto <span style="color:green">33455</span>.
+                        </p>
+                        <hr>
+                        <h4>¿Que hace esta pagina?</h4>
+                        <p>Brindamos una solución que facilita el tipeo de la URL requerida para abrir Xender en otros
+                            dispositivos, autocompletando las partes estáticas del mismo.
+                            También compartimos documentación para adquirir, utilizar y entender esta herramienta.
+                        </p>
+                        <a class="btn btn-danger" data-bs-toggle="collapse" href="#comofunciona" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Cerrar ¿Como Funciona?
+                        </a>
                     </div>
                 </div>
                 <p>Proyecto realizado por Rodrigo Aguilar <a
